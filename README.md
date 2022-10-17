@@ -4,7 +4,7 @@ Create immutable attributes on your Laravel models. Simply use the trait.
 
 ## Installation
 
-**Requirements**: PHP 7.1.3+ and Laravel 8+
+**Requirements**: PHP 8.1+ and Laravel 8+
 
 ```bash
 composer require hareland/laravel-immutable-attributes
