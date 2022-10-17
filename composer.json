@@ -1,0 +1,48 @@
+{
+  "name": "hareland/laravel-immutable-attributes",
+  "description": "Make laravel model attributes immutable",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kristian Hareland",
+      "email": "zablockijj@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3|^8.0",
+    "illuminate/database": "^8.0|^9.0",
+    "illuminate/support": "^8.0|^9.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "^9.0",
+    "pestphp/pest": "^1.22",
+    "pestphp/pest-plugin-laravel": "^1.3",
+    "orchestra/testbench": "^7.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hareland\\Immutable\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Hareland\\Immutable\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hareland\\Immutable\\ImmutableServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
