@@ -1,4 +1,4 @@
-name: Pest
+name: Build
 
 on:
   push:

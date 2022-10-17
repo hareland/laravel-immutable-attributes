@@ -1,3 +1,5 @@
+[![Build](https://github.com/hareland/laravel-immutable-attributes/actions/workflows/pest.yml/badge.svg)](https://github.com/hareland/laravel-immutable-attributes/actions/workflows/pest.yml)
+
 # Laravel Immutable Model Attributes
 
 Create immutable attributes on your Laravel models. Simply use the trait.
