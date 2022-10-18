@@ -1,31 +1,26 @@
 <?php
 
-namespace Hareland\Immutable\Traits;
+namespace Hareland\LaravelImmutableAttributes\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 
 trait HasImmutableAttributes
 {
-    public static function bootImmutableAttributes(): void
+    public static function bootHasImmutableAttributes(): void
     {
         static::updating(
-            function (Model $model) {
-                $this->resetImmutableAttributes($model);
-            }
+            fn(Model $model) => $model->resetImmutableAttributes($model),
         );
     }
 
     private function resetImmutableAttributes(Model $model): void
     {
-        collect($this->getImmutableAttributes())
-            ->each(
-                function (string $attribute) use ($model) {
-                    if (!is_null($model->getOriginal($attribute))
-                        && $model->getOriginal($attribute) !== $model->{$attribute}) {
-                        $model->{$attribute} = $model->getOriginal($attribute);
-                    }
-                }
-            );
+        foreach ($this->getImmutableAttributes() as $attribute) {
+            if (!is_null($model->getOriginal($attribute))
+                && $model->getOriginal($attribute) !== $model->{$attribute}) {
+                $model->{$attribute} = $model->getOriginal($attribute);
+            }
+        }
     }
 
     public function setAttribute($key, $value)

@@ -1,11 +1,11 @@
 <?php
 
-namespace Hareland\Immutable\Tests;
+namespace Hareland\LaravelImmutableAttributes\Tests;
 
-use Hareland\Immutable\LaravelImmutableAttributesServiceProvider;
+use Hareland\LaravelImmutableAttributes\LaravelImmutableAttributesServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
-class TestCase extends Orchestra
+class LaravelTestCase extends Orchestra
 {
     protected function setUp(): void
     {

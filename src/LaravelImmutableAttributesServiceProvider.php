@@ -1,6 +1,6 @@
 <?php
 
-namespace Hareland\Immutable;
+namespace Hareland\LaravelImmutableAttributes;
 
 
 use Illuminate\Support\ServiceProvider;

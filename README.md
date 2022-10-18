@@ -16,13 +16,14 @@ composer require hareland/laravel-immutable-attributes
 ## Define Immutable Attributes
 
 Define the attributes to be immutable on your model:
+
 ```php
 <?php
  
 namespace App\Models;
  
 use Illuminate\Database\Eloquent\Model;
-use Hareland\Immutable\Traits\HasImmutableAttributes;
+use Hareland\LaravelImmutableAttributes\Traits\HasImmutableAttributes;
  
 class Product extends Model
 {

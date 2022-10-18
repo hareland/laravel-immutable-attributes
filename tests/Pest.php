@@ -1,5 +1,5 @@
 <?php
 
-use Hareland\Immutable\Tests\TestCase;
+use Hareland\LaravelImmutableAttributes\Tests\LaravelTestCase;
 
-uses(TestCase::class)->in(__DIR__);
+uses(LaravelTestCase::class)->in(__DIR__);

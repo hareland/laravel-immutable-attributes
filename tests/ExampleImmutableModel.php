@@ -1,9 +1,9 @@
 <?php
 
-namespace Hareland\Immutable\Tests;
+namespace Hareland\LaravelImmutableAttributes\Tests;
 
 
-use Hareland\Immutable\Traits\HasImmutableAttributes;
+use Hareland\LaravelImmutableAttributes\Traits\HasImmutableAttributes;
 use Illuminate\Database\Eloquent\Model;
 
 /**

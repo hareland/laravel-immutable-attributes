@@ -5,8 +5,9 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Kristian Hareland",
-      "email": "mrhareland+packagist@gmail.com"
+      "name": "Hareland",
+      "email": "mrhareland+packagist@gmail.com",
+      "homepage": "https://github.com/hareland"
     }
   ],
   "require": {
@@ -23,18 +24,18 @@
   },
   "autoload": {
     "psr-4": {
-      "Hareland\\Immutable\\": "src/"
+      "Hareland\\LaravelImmutableAttributes\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Hareland\\Immutable\\Tests\\": "tests/"
+      "Hareland\\LaravelImmutableAttributes\\Tests\\": "tests/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Hareland\\Immutable\\ImmutableServiceProvider"
+        "Hareland\\LaravelImmutableAttributes\\LaravelImmutableAttributesServiceProvider"
       ]
     }
   },

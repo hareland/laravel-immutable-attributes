@@ -23,6 +23,6 @@ return new class extends Migration {
 
     public function down()
     {
-        //..
+        Schema::drop('example_immutable_model');
     }
 };
