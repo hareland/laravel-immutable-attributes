@@ -1,4 +1,5 @@
 [![Build](https://github.com/hareland/laravel-immutable-attributes/actions/workflows/pest.yml/badge.svg)](https://github.com/hareland/laravel-immutable-attributes/actions/workflows/pest.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/hareland/laravel-immutable-attributes.svg?style=flat-square)](https://packagist.org/packages/hareland/laravel-immutable-attributes)
 
 # Laravel Immutable Model Attributes
 
